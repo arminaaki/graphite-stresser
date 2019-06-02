@@ -28,5 +28,3 @@ USER user
 COPY --from=build /deps/build/libs/deps-0.1.jar /graphite-stresser.jar
 
 CMD exec /usr/local/openjdk-8/bin/java -jar /graphite-stresser.jar ${HOST} ${PORT} ${NUMHOSTS} ${NUMTIMERS} ${INTERVAL} ${DEBUG}
-
-
